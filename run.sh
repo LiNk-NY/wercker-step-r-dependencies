@@ -18,8 +18,8 @@ cran_dependencies () {
   run_script <<END
 repos <- $WERCKER_R_DEPENDENCIES_REPOS
 if (is.null(repos)) {
-  if (requireNamespace("BiocInstaller", quietly = TRUE)) {
-    repos <- BiocInstaller::biocinstallRepos()
+  if (requireNamespace("BiocManager", quietly = TRUE)) {
+    repos <- BiocManager::repositories()
   } else {
     repos <- c(CRAN = "http://cran.rstudio.com")
   }
