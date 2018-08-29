@@ -18,8 +18,8 @@ parameter.
   install, separated by whitespace.
 
 * `repos` (optional). Repos to set in R using `options(repos = XXX)`.  If no
-  repos are set and `BiocInstaller` is included in your docker image
-  `BiocInstaller::biocinstallRepos()` will be used to set the repos.
+  repos are set and `BiocManager` is included in your docker image
+  `BiocManager::repositories()` will be used to set the repos.
 
 ## Example
 
@@ -66,6 +66,9 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.0.10
+- use BiocManager instead of BiocInstaller
 
 ## 0.0.9
 - use run_script, add keyword
