@@ -1,5 +1,5 @@
 box: node 
 build:
   steps:
-    - shellcheck
-    - validate-wercker-step
+    - wercker/shellcheck
+    - wercker/validate-wercker-step
