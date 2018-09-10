@@ -1,6 +1,6 @@
 name: r-dependencies
 version: 0.0.10
-description: install R dependencies
+summary: install R dependencies
 keywords:
   - r
 properties:
