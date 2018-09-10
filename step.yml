@@ -5,10 +5,10 @@ tags:
  - r
 properties:
   - name: github_packages
-    type: string
+    type: "string"
     required: false
     default: ""
   - name: repos
-    type: string
+    type: "string"
     required: false
     default: "NULL"
