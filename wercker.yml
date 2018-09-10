@@ -2,4 +2,4 @@ box: node
 build:
   steps:
     - wercker/shellcheck
-    - wercker/validate-wercker-step
+    - mr148/validate-wercker-step
