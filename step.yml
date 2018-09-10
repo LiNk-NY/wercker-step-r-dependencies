@@ -4,11 +4,9 @@ summary: install R dependencies
 tags:
  - r
 properties:
-  - name: github_packages
-    type: "string"
-    required: false
-    default: ""
-  - name: repos
-    type: "string"
-    required: false
-    default: "NULL"
+- name: github_packages
+ type: string
+ required: false
+- name: repos
+ type: string
+ required: false
