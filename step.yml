@@ -1,14 +1,14 @@
 name: r-dependencies
 version: 0.0.10
 summary: install R dependencies
-keywords:
-  - r
+tags:
+ - r
 properties:
-  github_packages:
+  - name: github_packages
     type: string
     required: false
     default: ""
-  repos:
+  - name: repos
     type: string
     required: false
     default: "NULL"
