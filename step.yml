@@ -1,7 +1,7 @@
 name: r-dependencies
 version: 0.0.10
 summary: install R dependencies
-tags:
+keywords:
   - r
 properties:
   - name: github_packages
