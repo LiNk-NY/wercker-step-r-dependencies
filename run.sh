@@ -16,7 +16,7 @@ setup_libs () {
 
 cran_dependencies () {
   run_script <<END
-repos <- $WERCKER_REPOS
+repos <- $WERCKER_R_DEPENDENCIES_REPOS
 if (is.null(repos)) {
   if (requireNamespace("BiocManager", quietly = TRUE)) {
     repos <- BiocManager::repositories()
@@ -55,8 +55,8 @@ setup_libs
 
 cran_dependencies
 
-if [ ! -z "$WERCKER_GITHUB_PACKAGES" ]; then
-  github_dependencies "$WERCKER_GITHUB_PACKAGES"
+if [ ! -z "$WERCKER_R_DEPENDENCIES_GITHUB_PACKAGES" ]; then
+  github_dependencies "$WERCKER_R_DEPENDENCIES_GITHUB_PACKAGES"
 fi
 
 success 'R dependencies installed'
