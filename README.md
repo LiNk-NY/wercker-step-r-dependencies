@@ -67,6 +67,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 0.0.12
+
+- Version bump for step to build
+
 ## 0.0.11
 
 - Fix BiocManager code and use `BiocManager::repositories`
