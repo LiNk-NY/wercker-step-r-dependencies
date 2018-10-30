@@ -18,11 +18,9 @@ cran_dependencies () {
   run_script <<END
 repos <- $WERCKER_R_DEPENDENCIES_REPOS
 if (is.null(repos)) {
-  if (requireNamespace("BiocManager", quietly = TRUE)) {
-    repos <- BiocManager::repositories()
-  } else {
-    repos <- c(CRAN = "http://cran.rstudio.com")
-  }
+  if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+  repos <- BiocManager::repositories()
 }
 options(repos = repos)
 devtools::install_deps(dependencies = TRUE)

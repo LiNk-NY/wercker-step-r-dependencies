@@ -67,6 +67,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 0.0.11
+
+- Fix BiocManager code and use `BiocManager::repositories`
+
 ## 0.0.10
 - use BiocManager instead of BiocInstaller
 
